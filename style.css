@@ -1,0 +1,261 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Source+Sans+Pro:ital,wght@0,200;0,600;1,300&display=swap');
+/*fonts usadas na pagina*/
+*{margin: 0; padding: 0;}
+
+
+body{
+	background-color: rgb(255,255,255);
+}/*tamanho do corpo da página*/
+
+header, img{
+	width: 100%;
+	height: 380px;
+}/*tamanho do cabeçario e da imagem logo*/
+
+
+nav{
+	text-align: center;
+    background-color: #5E8067;
+    padding: 10px;
+
+}/*menu*/
+
+a{
+	color:#FFF;
+	font:1.4rem 'Source Sans Pro', sans-serif;
+	text-decoration: none;
+}/*links em geral*/
+
+.a-menu{
+	margin-right: 60px;
+	font-weight: bold;/*negrito*/
+} /*mudança somente da classe, sem interferir nos outros links*/
+
+.a-menu:hover, .a-menu:active{
+	color: #000;
+} /*mudança de cor ao passar o cursor por cima do link*/
+
+.a-menu:hover, .a-menu:visited:{
+	color: #FFF;
+}/*mudança de cor ao clicar no link*/
+
+article{
+	width: 100%;
+	background-color: #fff;
+	padding: 20px;
+	box-sizing: border-box;
+
+}
+
+h1{
+	font-family: 'Dancing Script', cursive;
+	font-size: 3rem;
+	text-align: center;
+	color: #425;
+	margin-bottom: 30px;
+}/*titulo*/
+
+p{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.1rem;
+	color: #000;
+	text-align: justify;
+	text-indent: 10px;
+	line-height: 25px;
+}/*paragrafo simples*/
+
+section{
+	padding: 20px;
+}
+
+
+h2{
+	font-family: 'Dancing Script', cursive;
+	font-size: 2rem;
+	text-align: left;
+	color: #425;
+	margin-bottom: 30px;
+	margin-left: 10px;
+}/*formatação geral dos h2*/
+
+#txt{
+	color: 000;
+	font-weight: bold;
+}
+
+#pag-proj{
+	background-color: #5E8067;
+}/*cor de fundo da pagina de projetos*/
+
+#pag-proj h2{
+	color: #FFF;
+}/*formatação especifica de um h2*/
+
+
+ul{
+	list-style-type: circle;
+	padding: 30px 80px 50px 80px;
+}/*formatação da caixa de projetos*/
+
+li{
+	color: #FFF;
+}/*ferramenta para formatar informações em lista*/
+
+#pag-aulas{
+	background-color: #EEE;
+	
+}/*formatação da pag aulas*/
+
+#container{
+	display: flex;
+	margin-bottom: 40px;
+}/*caixas que terão os cards*/
+
+.card{
+	background-color: #FFF;/*cor de fundo*/
+	margin: 10px;
+	width: 30%;
+	padding: 10px;/*distancia da borda*/
+	border-radius: 10px;/*arredondamento na borda*/
+	box-shadow: 4px 6px 5px #5E8067;/*sombra na borda*/
+	transition: 0.3s;/*efeito de transição*/
+}/*formatação dos cards*/
+
+.card:hover{
+	box-shadow: 7px 10px 9px #5E8067;
+}
+
+.card-content{
+	padding: 10px;
+}/*formatação do interior/conteudo do card*/
+
+.card-content p{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1rem;
+	color: #000;
+}
+
+h3{
+	font-family: 'Dancing Script', cursive;
+	font-size: 2rem;
+	text-align: center;
+	color: #425;
+	margin-bottom: 10px;/*margem abaixo do conteudo*/
+}
+
+#pag-ult-aula{
+
+}
+
+#pag-ult-aula p{
+	text-align: left;
+	margin-bottom: 40px;
+}
+
+#container-ult{
+	display: flex;
+}
+
+.container-icon{
+	margin-top: 60px;
+	display: flex;
+	justify-content: center;/*centraliza as coisas dentro do container*/
+	align-items: center; /*força o alinhamento dos item do container*/
+}
+
+.container-icon p{
+	font-weight: bold;
+}
+
+.img-icon{
+	width: 30px;
+	height: 20px;
+	padding: 10px;
+}
+
+video{
+	width: 500px;
+}
+
+.coluna{
+	padding: 20px;
+}
+
+footer{
+	background-color: #000;
+	padding: 10px;
+	color: #FFF;
+}/*rodapé da pagina*/
+
+footer p{
+	text-align: center;
+	color: #FFF;
+	font-size: 1.5rem;
+}/*configurações do rodapé*/
+
+/*pagina agendamentos*/
+#pag-agendamentos{
+
+}
+
+#pag-agendamentos p{
+	text-align: center;
+	margin-bottom: 20px;
+}/*configuração em cascata somente dos P da pagina agendamentos*/
+
+form{
+	width: 340px;
+	
+	margin: 0 auto;
+}/*configuração dos fomularios*/
+
+input, select, textarea{
+	width: 100%;
+	height: 27px;
+	margin-bottom: 12px;/*margem inferior*/
+	box-sizing: border-box;/*impede que os espaçametos estrapolem a região da caixa*/
+	padding-left: 5px;/*espaçamento*/
+	border: 1px solid #C4C4C4;
+}/*seletor inpute, configurações*/
+
+label, fieldset, input, select, textarea{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+fieldset{
+	border: 1px solid #CCC;
+	margin-bottom: 12px;
+	padding: 7px;
+}
+
+#data-hr-aula{
+	display: flex;
+}
+
+fieldset [type="radio"]{
+	width: 15px;
+	height: 15px;
+	margin-left: 30px;
+}
+
+textarea{
+	height: 80px;
+}
+
+#botoes-form{
+	display: flex;
+	
+}
+
+input[name="btn-enviar"], input[type="reset"]{
+	margin: 20px;
+	background-color: #8BC34A;
+	color: #FFF;
+	border: 0;
+	border-radius: 6px;
+}
+
+input[type="reset"]{
+	background-color: #F47E7E;
+}
